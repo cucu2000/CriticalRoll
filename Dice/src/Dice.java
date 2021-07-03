@@ -32,7 +32,7 @@ public class Dice {
         //loops through a die x and gives the sides of the die in Arraylist numbers
         //where count = index and sides is the # added
         // a d4 arraylist will be [4, 3, 2, 1]
-        // a d100 arraylist will be [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        // a d100 arraylist will be [100, 90, 80, 70, 60, 50, 40, 30, 20, 10]
         if (sides == 4) {
             while (sides != 0) {
                 numbers.add(count, sides);
@@ -72,7 +72,7 @@ public class Dice {
         }else if(sides == 100){
             while(sides != 0){
                 numbers.add(count, sides);
-                sides = sides - 10;
+                sides -= 10;
                 count ++;
             }
         }else{
